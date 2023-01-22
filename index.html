@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css"/>
+    <title>The Code Accelerator</title>
+    <style>
+      .logo{
+        height: 90px;
+        margin-left: 30px;
+      }
+      .navbar-nav{
+        justify-content: right;
+        gap: 50px;
+      }
+      .collapse {
+       height: 100px;
+        justify-content: center;
+      }
+      #box1{    
+        display: grid;
+        grid-template-columns:repeat(2 ,1fr) ;
+        grid-template-rows:300px;
+        gap: 10px;
+        margin-top: 40px;  
+    }
+     @media all and (min-width:380px) and (max-width:700px){
+        #box1{
+        display: grid;
+        grid-template-columns:repeat(1 ,1fr) ;
+        grid-template-rows:200px 250px;
+        margin:auto;
+        gap: 10px;       
+        }
+    } 
+    .toppara{
+font-size: 25px;
+margin-top: 20px;
+text-align: center;
+color: #848abd;
+  
+}
+.topheading{
+
+  text-align: center;
+  margin-left: 270px;
+  width: 280px;
+}
+@media (max-width: 480px) {
+.topheading{
+                margin-left: 60px;
+            }
+        }
+.web-design{
+  border: 2px solid rgb(255, 255, 255);
+  width: 410px;
+  height: 260px;
+   box-shadow: 5px 5px 17px 5px #c6c2c2;;
+   border-radius: 10px;
+}
+@media all and (min-width:380px) and (max-width:700px){
+    .web-design{
+        display: grid;
+        grid-template-columns:repeat(1 ,1fr) ;
+        grid-template-rows:400px 400px;
+        margin:auto;
+        gap: 10px;
+            
+        }
+    }
+.blog-slider__img img {
+  height:90%;
+  width:90%;
+  border-radius: 50%;
+  display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blog-slider {
+  width: 95%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 25px;
+  transition: all 0.3s; 
+}
+.blog-slider__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  transform: translateX(-80px);
+  overflow: hidden;
+background-color: #f0f0f0 ;
+border-radius: 50%;
+margin-left: 50px;
+margin-top: -40px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__img {
+    transform: translateY(-30%);
+    transform: translateX(100%);
+   
+  }
+}
+.mainpara{
+    width: 80%;
+    margin-left: 50px;
+    font-size: 13px;
+    word-spacing:1px;
+}
+.para1{
+   text-align: center;
+}
+.headingmain{
+  text-align: center;
+  margin-top: 40px;
+}
+#box3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px;
+        gap: 10px;
+        /* border: 2px solid red; */
+        margin-top: 10px;
+      }
+      #box3 > div {
+    border: 1px solid white;
+      }
+      img {
+        width: 100%;
+      }
+      @media all and (min-width: 380px) and (max-width: 700px) {
+        #box3 {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: 300px 400px;
+          margin: auto;
+        
+        }
+      }
+  @media (min-width: 768px) and (max-width: 1024px){
+            #box3 {
+                /* background-color: blue; */
+                display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: 300px 400px;
+          margin: auto;
+        
+            }
+        }
+      .content {
+        position: relative;
+        overflow: hidden;
+        /* border: 2px solid rgb(17, 0, 255); */
+        justify-content: left;
+        margin-left: 40px;
+      }
+      .content:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -335px;
+        width: 2px;
+        height: 70%;
+        background: #ccd1d9;
+        z-index: 1;
+        margin-top: 5px;
+      }
+.heading3{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+      .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+        /* border: 2px solid red; */
+      }
+      .timeline-block-right {
+        float: right;
+      }
+   .marker {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #848abd;
+        background: white;
+        z-index: 9999;
+        text-align: center;
+      }
+      .timeline-content {
+        width: 95%;
+        padding: 0 15px;
+        color: #666;
+      }
+   .timeline-content h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      .timeline-content span {
+        font-size: 15px;
+        color: #a4a4a4;
+      }
+.para1{
+   text-align: center;
+}
+      .timeline-content p {
+        font-size: 14px;
+        line-height: 1.5em;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+      }
+      @media screen and (max-width: 768px) {
+        .content:before {
+          left: 8px;
+          width: 2px;
+        }
+        .timeline-block {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .timeline-block-right {
+          float: none;
+          border: 1px solid green;
+        }
+
+        .timeline-block-left {
+          float: none;
+          direction: ltr;
+        }
+      }
+      .number{
+        text-align: center;
+        margin-top: 10px;
+        color: #848abd;
+        font-weight: bold;
+      }
+ .image{
+    height: 300px;
+    width: 400px;
+    margin-left: 250px;
+ }
+ @media (max-width: 480px) {
+            .image {
+                margin-left: -1px;
+            }
+        }
+.startbtn{
+margin-left: 40%;
+font-size: 30px;
+color: white;
+background-color: 
+#848abd;
+border: 1px solid 
+#848abd;
+border-radius: 10px;
+}
+  @media (max-width: 480px) {
+            .startbtn {
+                margin-left: 60px; 
+            }
+        }   
+.jason{
+font-weight: bold;
+}
+.ready{
+font-weight: bold;
+color: 
+#a9cedf;
+margin-top: -20px;
+}
+ 
+/* *************************prising table***************** */
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: none;
+
+}
+.main.pad {
+    padding: 35px 40px;
+}
+.main {
+    margin: 0 auto;
+    position: relative;
+}
+.main-block {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-top: 50px;
+}
+
+section#content {
+    position: relative;
+    z-index: 10;
+    padding: 0px 0 170px 0;
+    margin-top: 80px;
+}
+.main-block h2 {
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: black;
+    text-align: center;
+}
+footer {
+    z-index: 100;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    color: black;
+    font-size: 16px;
+    opacity: 0;
+    font-family: 'Open Sans';
+    width: 100%;
+    line-height: 25px;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    margin: 0;
+}
+footer .authorWindow a {
+    text-decoration: none;
+}
+footer p strong {
+    color: black;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.about-me-img {
+    width: 120px;
+    height: 120px;
+    left: 10px;
+    bottom: 30px;
+    position: relative;
+    border-radius: 100px;
+    border: 1px solid white;
+    background: blue;
+}
+.about-me-img img {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.authorWindow {
+    width: 560px;
+    background: #848abd;
+    padding: 22px 20px 22px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.authorWindowWrapper {
+    display: none;
+    left: 110px;
+    bottom: 0;
+    padding-left: 30px;
+    position: absolute;
+}
+.trans {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    transition: all 500ms ease;
+}
+@media screen and (max-width: 680px) {
+    .authorWindow {
+        width: 180px;
+    }
+    .authorWindowWrapper {
+        bottom: -50px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+.responsive-table {
+    width: 100%;
+    margin-bottom: 2em;
+
+}
+
+@media (min-width: 48em) {
+    .responsive-table {
+        font-size: .9em;
+    }
+}
+@media (min-width: 68em) {
+    .responsive-table {
+        font-size: 1em;
+        width: 850px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .table_small {
+        width: 400px;
+ }
+}
+.responsive-table thead {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+@media (min-width: 48em) {
+    .responsive-table thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: auto;
+    }
+}
+.responsive-table thead th {
+    border: 0.2px solid rgb(219, 216, 216);
+    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+.responsive-table tbody,
+.responsive-table tr,
+.responsive-table th,
+.responsive-table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+@media (min-width: 48em) {
+    .responsive-table tr {
+        display: table-row;
+    }
+}
+.responsive-table th,
+.responsive-table td {
+    padding: .5em;
+    vertical-align: middle;
+    font-size: 15px;
+}
+@media (min-width: 30em) {
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: .75em .5em;
+    }
+}
+@media (max-width: 30em) {
+    .responsive-table th,
+    .responsive-table td {
+        background-color: #848abd;
+    }
+    .responsive-table td {
+        border-bottom: 1px solid rgb(219, 216, 216);
+        border-right: 1px solid rgb(219, 216, 216);
+    }
+ .responsive-table tbody td {
+        border: 1px solid rgb(219, 216, 216);
+    }
+
+}
+@media (min-width: 48em) {
+    .responsive-table th,
+    .responsive-table td {
+        display: table-cell;
+        padding: .5em;
+    }
+}
+@media (min-width: 62em) {
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: .75em .5em;
+    }
+}
+@media (min-width: 75em) {
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: .75em;
+    }
+}
+.responsive-table caption {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+@media (min-width: 48em) {
+    .responsive-table caption {
+        font-size: 1.5em;
+    }
+}
+.responsive-table tfoot {
+    font-size: .8em;
+    font-style: italic;
+}
+@media (min-width: 62em) {
+    .responsive-table tfoot {
+        font-size: .9em;
+    }
+}
+@media (min-width: 48em) {
+    .responsive-table tbody {
+        display: table-row-group;
+    }
+}
+.responsive-table tbody tr {
+    margin-bottom: 3em;
+    /* border: 2px solid #FFFFFF; */
+}
+@media (min-width: 48em) {
+    .responsive-table tbody tr {
+        display: table-row;
+        border-width: 1px;
+    }
+}
+.responsive-table tbody tr:last-of-type {
+    margin-bottom: 0;
+}
+@media (min-width: 48em) {
+    .responsive-table tbody tr:nth-of-type(even) {
+        background-color: rgba(94, 93, 82, 0.1);
+    }
+}
+.responsive-table tbody th[scope="row"] {
+    /* background-color: #1d96b2; */
+    color: white;
+    border: 1px solid rgb(219, 216, 216);
+    font-weight: bold;
+    /* background: white; */
+}
+@media (min-width: 48em) {
+    .responsive-table tbody th[scope="row"] {
+        background-color: rgba(255, 255, 255, 1);
+        color: #000000;
+        text-align: center;
+    }
+}
+.responsive-table tbody td {
+    text-align: right;
+    background: rgba(255, 255, 255, 1);
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media (min-width: 30em) {
+    .responsive-table tbody td {
+        border: 1px solid rgb(219, 216, 216);
+    }
+}
+@media (min-width: 48em) {
+    .responsive-table tbody td {
+        text-align: center;
+        border-bottom: 1px solid rgb(219, 216, 216);
+        border-right: 1px solid rgb(219, 216, 216);
+    }
+}
+.responsive-table tbody td[data-type=currency] {
+    text-align: right;
+}
+.responsive-table tbody td[data-title]:before {
+    content: attr(data-title);
+    float: left;
+    font-size: .8em;
+    color: rgba(94, 93, 82, 0.75);
+}
+@media (min-width: 30em) {
+    .responsive-table tbody td[data-title]:before {
+        font-size: .9em;
+    }
+}
+@media (min-width: 48em) {
+    .responsive-table tbody td[data-title]:before {
+        content: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-block {
+        width: 100%;
+    }
+    .responsive-table tbody {
+        font-family: 'Open Sans';
+        font-size: 16px;
+    }
+}
+#getbtn{
+    color: white;
+    background-color: #848abd;
+    border-radius: 10px;
+}
+body{
+   font-family: adobe-clean, sans-serif;
+
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="https://thecodeaccelerator.com/wp-content/uploads/2020/08/new_year_logo.gif"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Features
+                </a>
+            
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="getbtn" >Get started now</a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- *****************************section1*********************** -->
+<div id="box1">
+  <div>
+<p class="toppara">TESTIMONIALS</p>
+<h1 class="topheading">What People Say About Us</h1>
+  </div>
+  <div>
+    <section class="web-design">
+        <div class="container">
+           <div class="blog-slider__item">
+             <div class="blog-slider__img">
+                    <img alt="Design" class="finbyz-zoomin" src="https://www.postplanner.com/hubfs/Imported%20images/jason-ross-lg.png" title="Design">
+             </div>
+         <div class="blog-slider__content">
+            <div class="mainpara"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    <p class="jason">Jason Ross</p>
+    <p class="ready">Readyman.com</p>    
+            </div>
+    
+        </div>
+    </div>   
+    </div>
+    </section>
+  </div>
+</div>
+
+<header>
+    <h1 class="headingmain">How Does It Work</h1>
+    <p class="para1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry.Lorem Ipsum has been the industry's standard dummy text ever
+      since
+    </p>
+  </header>
+  <div id="box3">
+    <div>
+      <img
+        class="image"
+        src="https://i.postimg.cc/ydpwGcgD/Screenshot-2023-01-19-173458.png"
+      />
+    </div>
+    <div>
+      <div class="content">
+        <div class="timeline-block ">
+          <div class="marker"><div class="number">1</div></div>
+          <div class="timeline-content">
+            <p1 class="heading3">Sign-up for Free</p1>
+            <p class="samepara">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-block ">
+          <div class="marker"><div class="number">2</div></div>
+          <div class="timeline-content">
+            <p1 class="heading3">Promote</p1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-block ">
+          <div class="marker"><div class="number">3</div></div>
+          <div class="timeline-content">
+            <p1 class="heading3">Get Rewarded</p1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1  class="headingmain" >Start your free trial</h1>
+<p class="para1">
+  Lorem Ipsum is simply dummy text of the printLorem Ipsum is simply dummy
+  text of the printing.
+</p>
+<button class="startbtn">Start 7-day free trial</button>
+
+<section id="content">
+    <div class="main-block">
+        <div class="main pad">
+            <div style="display: flex; justify-content: center; margin-bottom: 5%; margin-top: -30px;">
+                <div style="width:80px ; color: #848abd;background-color: #e5e6f1; text-align: center;padding: 10px;border:1px solid #848abd" >Yearly</div>
+                <div style="width:80px ;color: #848abd;text-align: center;padding: 10px;border:1px solid #848abd">Monthly</div>
+            </div>
+            <div>
+            <table class="responsive-table ">
+                <thead>
+                    <tr>
+                        <th style="border-left:none ; border-top: none; height: 70px" scope="col" rowspan="2"> </th>
+                    </tr>
+                    <tr style="border: none;">
+                        <th style="background-color:#e5e7f1 ; color:#848abd" scope="col">Starter<br /> <span
+                                style="font-size: 10px;color: #aaabb0;">$228 per year</span></th>
+                        <th style="background-color:#848abd ; color:white" scope="col">Solo<br /> <span
+                                style="font-size: 10px;">$228 per year</span></th>
+                        <th style="background-color:#e5e7f1 ; color:#848abd" scope="col">Bisuniss<br /> <span
+                                style="font-size: 10px;color: #aaabb0;">$468 per year</span></th>
+                        <th style="background-color:#e5e7f1 ; color:#848abd" scope="col">Vinture <br /> <span
+                                style="font-size: 10px;color: #aaabb0;">$948 per year</span></th>
+                        <th style="background-color:#e5e7f1 ; color:#848abd" scope="col">Interprise <br /> <span
+                                style="font-size: 10px;color: #aaabb0;">$4188 per year</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="border-left:none ; height: 60px; text-align: left;font-size: 11px;" scope="row">
+                            Monthly Cost <br /> <span style="font-size: 10px;color: #aaabb0;">Billed Annualy</span>
+                        </th>
+                        <td data-title="Starter">$6/ mo</td>
+                        <td data-title="Solo">$19 / mo</td>
+                        <td data-title="Bisuniss">$39 /mo </td>
+                        <td data-title="Vinture">$79/mo</td>
+                        <td data-title="Interprise">$349/mo</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Social message</th>
+                        <td style="font-size:11px ;" data-title="Starter">3</td>
+                        <td style="font-size:11px ;" data-title="Solo">10</td>
+                        <td style="font-size:11px ;" data-title="Bisuniss">25</td>
+                        <td style="font-size:11px ;" data-title="Vinture">50</td>
+                        <td style="font-size:11px ;" data-title="Interprise">51+</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Post In Scheule</th>
+                        <td style="font-size:11px ;" data-title="Starter">100</td>
+                        <td style="font-size:11px ;" data-title="Solo">1000</td>
+                        <td style="font-size:11px ;" data-title="Bisuniss">5000</td>
+                        <td style="font-size:11px ;" data-title="Vinture">10000</td>
+                        <td style="font-size:11px ;" data-title="Interprise">10000+</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            User</th>
+                        <td style="font-size:11px ;" data-title="Starter">1</td>
+                        <td style="font-size:11px ;" data-title="Solo">1</td>
+                        <td style="font-size:11px ;" data-title="Bisuniss">4</td>
+                        <td style="font-size:11px ;" data-title="Vinture">8</td>
+                        <td style="font-size:11px ;" data-title="Interprise">9</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Core Scheduling<br /> Features</th>
+                        <td data-title="Starter">🗸</td>
+                        <td data-title="Solo">🗸</td>
+                        <td data-title="Bisuniss">🗸</td>
+                        <td data-title="Vinture">🗸</td>
+                        <td data-title="Interprise">🗸</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Premium Post<br />Automation</th>
+                        <td data-title="Starter">--</td>
+                        <td data-title="Solo">🗸</td>
+                        <td data-title="Bisuniss">🗸</td>
+                        <td data-title="Vinture">🗸</td>
+                        <td data-title="Interprise">🗸</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Core Content<br />Features </th>
+                        <td data-title="Starter">🗸</td>
+                        <td data-title="Solo">🗸</td>
+                        <td data-title="Bisuniss">🗸</td>
+                        <td data-title="Vinture">🗸</td>
+                        <td data-title="Interprise">🗸</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Premium Content</th>
+                        <td data-title="Starter">--</td>
+                        <td data-title="Solo">🗸</td>
+                        <td data-title="Bisuniss">🗸</td>
+                        <td data-title="Vinture">🗸</td>
+                        <td data-title="Interprise">🗸</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Advance Analysis</th>
+                        <td data-title="Starter">--</td>
+                        <td data-title="Solo">🗸</td>
+                        <td data-title="Bisuniss">🗸</td>
+                        <td data-title="Vinture">🗸</td>
+                        <td data-title="Interprise">🗸</td>
+                    </tr>
+                    <tr>
+                        <th style="border-left:none ; height: 40px; text-align: left;font-size: 11px;" scope="row">
+                            Support</th>
+                        <td style="font-size:11px ;" data-title="Starter">Chat&email</td>
+                        <td style="font-size:11px ;" data-title="Solo">Chat&email</td>
+                        <td style="font-size:11px ;" data-title="Bisuniss">Chat&email</td>
+                        <td style="font-size:11px ;" data-title="Vinture">Chat&email</td>
+                        <td style="font-size:11px ;" data-title="Interprise">Chat&email</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+  </body>
+</html>
